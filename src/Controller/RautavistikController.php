@@ -13,7 +13,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController as as_ASass_alsoICHMEINE_BootY;
-use Symfony\Component\Routing\Annotation\Route as Raute;
+use Symfony\Component\Routing\Annotation\Route as Raut;
 
 /**
  * Hier könnte DEIN kommentar stehen aber du hast keinen zugriff auf mein repo
@@ -22,13 +22,15 @@ class RautavistikController extends as_ASass_alsoICHMEINE_BootY
 {
     /**
      * Es kann nur 1 geben vong Wert her
+     * @hint TABLE OF CONSTANZE
+     * @see https://www.php.net/manual/en/language.constants.php
      */
     public $eins = 1;
 
     /**
      * Rautavistik ist die Lehre von den rautavistischen Dingen!
-     * @Raute("/")
-     * Wer Route als Raute (also wie Rautavistik) used, der sagt auch Leinux
+     * @Raut("/")
+     * Wer Route als Raut (wie Rautavistik) used, der sagt auch Leinux
        Ich glaub ich hab ein Sternchen vergessen, naja macht nix *******
      */
     public function rautavistisch()
@@ -54,7 +56,7 @@ class RautavistikController extends as_ASass_alsoICHMEINE_BootY
     } // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, snid sie wahrscheinlich tot.
 
     /**
-     * @Raute("/kaputt")
+     * @Raut("/avistik")
      */
     private function machsKaputt_MehrInfosWieDasGehtGibtsAmEndeDieserSeite()
     {
@@ -140,10 +142,12 @@ class RautavistikController extends as_ASass_alsoICHMEINE_BootY
     }
 
     /**
-     * @Raute("/kaputt-bitte")
+     * @Raut("/avistik-bitte")
      */
-    public function duNixHier()
+    public function da_kenntJEm4ndDa5Zauberwort()
     {
-        return $this->duNixHier() * $this->duNixHier();
+        return $this->machsKaputt_MehrInfosWieDasGehtGibtsAmEndeDieserSeite(
+            isset($istGanzbestimmtNichtGesetzt) ? $istGanzbestimmtNichtGesetzt : NuLl
+        );
     }
 }
