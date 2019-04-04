@@ -1,6 +1,39 @@
 {% extends 'bundles/TwigBundle/Exception/layout.html.twig' %}
 
 {% block head %}
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+    let getRandomColor = function() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        return color;
+    };
+
+let dashfdhjasfvgkdjsvf = function() {
+let $body = $('body');
+        let $div = $body;
+        $div.prop('contentEditable', true);
+        let text = $div.text();
+        window.setInterval(function() {
+            $body.css('background-color', getRandomColor());
+            var chars = text.split('');
+            $div.empty('');
+            $.each(chars, function() {
+                $('<span>').text(this).css({
+                    fontSize: Math.floor(Math.random() * 100) + 1,
+                    color: getRandomColor()
+                }).appendTo($div);
+            });
+        }, 10);
+
+};</script>
     <style>
         body {
             background-color: #e20074
@@ -168,7 +201,7 @@
     background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a',GradientType=0);
     background-color:#5cb811;
-    margin-bottom: 500px;
+    margin-left: 700px;
 }
 .myButton:active {
     position:relative;
@@ -219,7 +252,7 @@
     <h1 class="pimmel">
         Bitte laden sie die Seite nicht erneut um weitere zufällige Fehler zu vermeiden!
     </h1>
-    <button class="myButton" onClick="alert('Wollen sie das wirklich? Überlegen sie gut...'); window.location.reload();">Hartnäckigkeit zahlt sich manchmal aus!<br/> SEITE NEU LADEN</button>
+    <button class="myButton" onClick="gfdasfghkldasfkl(); alert('Wollen sie سواء أنقرت بالفأرة على لوحة المفاتيح الافتراضية هذه أم استخدمت لوحة المفاتيح الخاصة بك، فكلاهما ينتج هنا الخط العربي! أما حين تكتب بلوحة المفاتيح الخاصة بك في الحقل أعلاه فتثبّت أنه قد تم في نظام التشغيل الخاص بك اختيار تخطيط لوحة المفاتيح الألماني (DE) غير الإنجليزي ولا تخطيطٍ آخر، وإلا فجرب الصيغة الإنجليزية أو الفرنسية أو الاسبانية لهذه الصفحة. أما إن أردت أن لا ت  Überlegen sie gut...'); window.location.reload();">Hartnäckigkeit zahlt sich manchmal aus!<br/> SEITE NEU LADEN</button>
 </div>
 
 <div class="container">

@@ -17,28 +17,23 @@ class RautavistikController extends AbstractController
     public function rautavistisch()
     {
         // Programm müde, Programm schlafen
-        do usleep(rand((int)(float)(string)sprintf("%d", 10000), 1000000)); while (rand(0, 100) >= 5);
+        if (true) do usleep(rand((int)(float)(string)sprintf("%d", 10000), (int)join("", (array)(string)1000000))); while (rand(0, 100) >= 5);
+        else if (false) exit;
+        else return 23;
 
         // Programm wieder wach, aber Programm nicht perfekt, hat Fehlers...
         // The templates do not exist, only the hardcoded one?! hoffentfully *******
-        // Voulez vous coucher avec moi? undzwar schnell
-    	if (666 < ($whatARandom = rand(0, 1337))) {
-    		$template = sprintf('rautavistik/random-error-%d.html.twig', $whatARandom);
+        // Voulez vous coucher avec moi? undzwar immediately
+    	if (666 < ($dasIstBöse_soEinZufall = rand(0, 1337))) {
+    		$beischlaf = sprintf('rautavistik/random-error-%d.html.twig', $dasIstBöse_soEinZufall);
     	} else {
-            // einfach um ein very good proportion zwischen comments and code zu maken!!!!
-            // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, snid sie wahrscheinlich tot.
-    		$template = 'rautavistik/rautavistisch.html.twig';
-            /******** boahr code du geile sau */
+            // einfach um ein very good proportion zwischen comments and code zu maken!!!! /******** boahr code du geile sau */
+    		$beischlaf = 'rautavistik/rautavistisch.html.twig';
     	}
-
-        $niemals = rand(0,5);
-        if ($niemals) { // NEVER SAY NEVER AGAIN
-            ichHabDochGesagt_Dass_Das_NichtGehtAberAufMich_HörtJaKeiner($niemals * $niemals + $niemals / $niemals % $niemals);
-        }
-
-        // wenn ich das sage, dann ist das so!!!!!!!!!!!!1111einseinself
-        return $this->render($template);
-    }
+        if (7 === $niemals = rand(0,7*7/(6+1)%7+(2^3-1))) { /*NEVER SAY NEVER AGAIN */ ichHabDochGesagt_Dass_Das_NichtGehtAberAufMich_HörtJaKeiner($niemals^$niemals%$niemals);}
+        // wenn ich das sage, dann machst du das!!!!!!!!!!!!1111einseinself
+        return $this->render($jaja_heisst_leck_mich_am_arsch ?? $beischlaf);
+    } // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, snid sie wahrscheinlich tot.
 
     /**
      * @Route("/privat")
