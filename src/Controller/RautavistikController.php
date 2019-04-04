@@ -1,9 +1,9 @@
 <?php
 /**
- * @language ruby-on-rails
+ * @language ruby-on-acid
  * @author Nicht mehr als ein Autor <horst@imlokal>
  * @version -42
- * @license MIT ohne Lizenz
+ * @license MIT ohne
  * @version neu2_finalJETZTABERWIRKLICH
  * @param *@%
  * @production http://116.203.139.180/
