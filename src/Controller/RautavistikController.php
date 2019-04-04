@@ -56,7 +56,7 @@ class RautavistikController extends as_ASass_alsoICHMEINE_BootY
     /**
      * @Raute("/kaputt")
      */
-    private function machsKaputt()
+    private function machsKaputt_MehrInfosWieDasGehtGibtsAmEndeDieserSeite()
     {
         // programm gestorben, programm tot
         do usleep(rand((int)(float)sprintf("%d", 1), (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)                       (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)                                    (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
