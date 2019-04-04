@@ -1,23 +1,37 @@
 <?php
-
+/**
+ * @language ruby-on-rails
+ * @author Nicht mehr als ein Autor <horst@imlokal>
+ * @version -42
+ * @license MIT ohne Lizenz
+ * @version neu2_finalJETZTABERWIRKLICH
+ * @param *@%
+ */
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController as as_ASass_alsoICHMEINE_BootY;
+use Symfony\Component\Routing\Annotation\Route as Raute;
 
-class RautavistikController extends AbstractController
+/**
+ * Hier könnte DEIN kommentar stehen aber du hast keinen zugriff auf mein repo
+ */
+class RautavistikController extends as_ASass_alsoICHMEINE_BootY
 {
     /**
+     * Es kann nur 1 geben vong Wert her
+     */
+    public $eins = 1;
+
+    /**
      * Rautavistik ist die Lehre von den rautavistischen Dingen!
-     * @Route("/")
-     * Wer Route als Raut (also wie Rautavistik) ausspricht, der sagt auch Leinux :P
+     * @Raute("/")
+     * Wer Route als Raute (also wie Rautavistik) used, der sagt auch Leinux
        Ich glaub ich hab ein Sternchen vergessen, naja macht nix *******
      */
     public function rautavistisch()
     {
         // Programm müde, Programm schlafen
-        if (true) do usleep(rand((int)(float)(string)sprintf("%d", 10000), (int)join("", (array)(string)1000000))); while (rand(0, 100) >= 5);
+        if (true) do usleep(rand((int)(float)(string)sprintf("%d", (integer)10000), (int)join("", (array)(string)1000000))); while (rand(0, 100) >= 5);
         else if (false) exit;
         else return 23;
 
@@ -36,21 +50,96 @@ class RautavistikController extends AbstractController
     } // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, snid sie wahrscheinlich tot.
 
     /**
-     * @Route("/privat")
+     * @Raute("/kaputt")
      */
-    private function duNixHier()
+    private function machsKaputt()
     {
-        return $this->duNixHier() * $this->duNixHier();
+        // programm gestorben, programm tot
+        do usleep(rand((int)(float)sprintf("%d", 1), (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)                       (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)                                    (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+
+
+            (                                                                     int)(float)(integer)(string)(int         )(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+                                      (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(                       float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string                                                                                                                                                                                                       )(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string              )(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(           string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+                                                 (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string        )(int)(float)(integer              )(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+
+                             (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(       string)(int)(float)(               integer)(string)(int)(float)(integer)(      string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(             float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(                       string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(              int)(float)(integer)(                                                                   string)(int)(float)(integer                    )(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(               int      )(float)(     integer)(string)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(                             float)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)
+
+
+
+            (integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(        integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)                             (   float)   (integer)(string)(int)(float)(integer)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(                               float                 )(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)                                              (integer     )(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+                                                                          (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(float)(integer)(string)(int)
+
+                                                                          (float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)
+
+            (int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+
+
+
+
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)
+            (string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(string)(int)(float)(integer)(string)(                                                        int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(float)(integer)(string)(int)(int)(int)(int)(int)(int)(int)(int)1000000000000000000000000000000000000000000000000000000000000000000)); while (true);
+
+        return 3885 + $this->eins;
     }
 
     /**
-     * @Route("/kaputt")
+     * @Raute("/kaputt-bitte")
      */
-    public function machsKaputt()
+    public function duNixHier()
     {
-        // programm gestorben, programm tot
-        do usleep(rand((int)(float)sprintf("%d", 1), (int)1000000000000000000000000000000000000000000000000000000000000000000)); while (true);
-
-        return;
+        return $this->duNixHier() * $this->duNixHier();
     }
 }
