@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style>
+	body {
+		font-size: 32px;
+		font-family: Verdana;
+	}
+</style>
+
+<h1>Schade, dass sie hier sind!</h1>
+
+<p>Lesen sie bitte schnell, sonst bekommen sie vielleicht einen epileptischen Anfall!</p>
+
+<div>
+	Informationen zu diesem Projekt finden sie (und er) <a target="_blank" href="http://116.203.139.180/">HIER</a> und auf folgenden Seiten:<br/>
+	<br/>
+	In ihrer (und seiner) Landessprache unter <a href="http://google.de/">google.de</a> oder aber auch verf&uuml;gbar auf Englisch unter <a href="http://google.com/">google.com</a>.
+</div>
+
+<p><em>Auf wiedersehen und bleiben sie dieser Seite fern!</em></p>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+	let getRandomColor = function() {
+		let letters = '0123456789ABCDEF';
+		let color = '#';
+		for (var i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)];
+		}
+
+		return color;
+	};
+
+	window.setTimeout(function() {
+		let $body = $('body');
+		let $div = $('div');
+		$div.prop("contentEditable", true);
+		let text = $div.text();
+		window.setInterval(function() {
+			$body.css('background-color', getRandomColor());
+		    var chars = text.split("");
+		    $div.empty("");
+		    $.each(chars, function() {
+		        $("<span>").text(this).css({
+		        	fontSize: Math.floor(Math.random() * 100) + 1,
+		            color: getRandomColor()
+		        }).appendTo($div);
+		    });
+		}, 10);
+	}, 5000);
+</script>
+
+{% endblock %}
