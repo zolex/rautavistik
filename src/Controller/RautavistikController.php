@@ -12,13 +12,13 @@
  */
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController as as_ASass_alsoICHMEINE_BootY;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController as extendedXtensionsAbstractInterfaceDingens;
 use Symfony\Component\Routing\Annotation\Route as Raut;
 
 /**
- * Hier könnte DEIN kommentar stehen aber du hast keinen zugriff auf mein repo
+ * Hier könnte DEIN kommentar stehen aber du hast keinen Zugriff auf mein Repo du Plätzchen, bist wohl nicht mehr ganz knusprig!!!
  */
-class RautavistikController extends as_ASass_alsoICHMEINE_BootY
+class RautavistikController extends extendedXtensionsAbstractInterfaceDingens
 {
     /**
      * Es kann nur 1 geben vong Wert her
@@ -40,20 +40,21 @@ class RautavistikController extends as_ASass_alsoICHMEINE_BootY
         else if (false) exit;
         else return 23;
 
-        // Programm wieder wach, aber Programm nicht perfekt, hat Fehlers...
+        // Programm wieder wach aber Programm schlaftrunken, macht Fehlers...
         // The templates do not exist, only the hardcoded one?! hoffentfully *******
         // Voulez vous coucher avec moi? undzwar immediately
     	if (666 < ($dasIstBöse_soEinZufall = rand(0, 1337))) {
             // TEMPLATE: der BASS muss ficken!!
     		$derTief_tonMUSSBEISCHLAFEN = sprintf('rautavistik/random-error-%d.html.twig', $dasIstBöse_soEinZufall);
     	} else {
-            // einfach um ein very good proportion zwischen comments and code zu maken!!!! /******** boahr code du geile sau */
+            // einfach um ein very good proportion zwischen comments and code zu maken!!!! /******** boahr code du geile sau */ <- comment-in-comment is so useful!
     		$derTief_tonMUSSBEISCHLAFEN = 'rautavistik/rautavistisch.html.twig';
     	}
         if (7 === $niemals = rand(0,7*7/(6+1)%7+(2^3-1))) { /*NEVER SAY NEVER AGAIN */ ichHabDochGesagt_Dass_Das_NichtGehtAberAufMich_HörtJaKeiner($niemals^$niemals%$niemals);}
+        /////* <a href="https://github.com/zolex/rautavistik/blob/master/src/Controller/RautavistikController.php">missing alt attribute</a> -->
         // wenn ich das sage, dann machst du das!!!!!!!!!!!!1111eins{$this->eins}einself
         return $this->render($jaja_heisst_leck_mich_am_arsch ?? $derTief_tonMUSSBEISCHLAFEN);
-    } // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, snid sie wahrscheinlich tot.
+    } // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, s1nd sie wahrscheinlich tot.
 
     /**
      * @Raut("/avistik")
