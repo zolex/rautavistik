@@ -17,14 +17,8 @@
     "doctrine/collections": {
         "version": "v1.6.1"
     },
-    "doctrine/common": {
-        "version": "v2.10.0"
-    },
     "doctrine/event-manager": {
         "version": "v1.0.0"
-    },
-    "doctrine/inflector": {
-        "version": "v1.3.0"
     },
     "doctrine/lexer": {
         "version": "v1.0.1"
