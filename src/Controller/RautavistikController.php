@@ -52,7 +52,6 @@ class RautavistikController extends extendedXtensionsAbstractInterfaceDingens
     	}
         if (7 === $niemals = rand(0,7*7/(6+1)%7+(2^3-1))) { /*NEVER SAY NEVER AGAIN */ ichHabDochGesagt_Dass_Das_NichtGehtAberAufMich_HörtJaKeiner($niemals^$niemals%$niemals);}
         /////* <a href="https://github.com/zolex/rautavistik/blob/master/src/Controller/RautavistikController.php">missing alt attribute</a> -->
-        // wenn ich das sage, dann machst du das!!!!!!!!!!!!1111eins{$this->eins}einself
         return $this->render($jaja_heisst_leck_mich_am_arsch ?? $derTief_tonMUSSBEISCHLAFEN);
     } // Wn3n sie jze7t nc0h im3mr nhict mit mir sch1afen wll03n, s1nd sie wahrscheinlich tot.
 
@@ -147,6 +146,7 @@ class RautavistikController extends extendedXtensionsAbstractInterfaceDingens
      */
     public function da_kenntJEm4ndDa5Zauberwort()
     {
+        // wenn ich das sage, dann machst du das!!!!!!!!!!!!1111eins{$this->eins}einself
         return $this->machsKaputt_MehrInfosWieDasGehtGibtsAmEndeDieserSeite(
             isset($istGanzbestimmtNichtGesetzt) ? $istGanzbestimmtNichtGesetzt : NuLl
         );
