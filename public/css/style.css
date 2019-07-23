@@ -153,6 +153,7 @@ span.code {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 #header .logo h1 a,
@@ -163,8 +164,9 @@ span.code {
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
+  margin: 0;
   max-height: 26px;
+  vertical-align: baseline;
 }
 
 .main-pages {
@@ -1364,6 +1366,10 @@ span.code {
     padding: 8px 0;
   }
 
+  #header .logo img {
+    max-height: 21px;
+  }
+
   #intro {
     padding: 140px 0 60px 0;
   }
@@ -1427,8 +1433,8 @@ span.code {
     padding: 100px 0 20px 0;
   }
   #services .list {
-    margin-left: 0;
-  }
+    margin-left: 0
+;  }
 }
 
 @media (max-width: 420px) {
