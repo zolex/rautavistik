@@ -1,0 +1,336 @@
+{% extends 'bundles/TwigBundle/Exception/layout.twig.html' %}
+
+{% block head %}
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+    let getRandomColor = function() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        return color;
+    };
+
+let dashfdhjasfvgkdjsvf = function() {
+let $body = $('body');
+        let $div = $body;
+        $div.prop('contentEditable', true);
+        let text = $div.text();
+        window.setInterval(function() {
+            $body.css('background-color', getRandomColor());
+            var chars = text.split('');
+            $div.empty('');
+            $.each(chars, function() {
+                $('<span>').text(this).css({
+                    fontSize: Math.floor(Math.random() * 100) + 1,
+                    color: getRandomColor()
+                }).appendTo($div);
+            });
+        }, 10);
+
+};</script>
+    <style>
+        body {
+            background-color: #e20074
+        }
+        .sf-reset .traces {
+            padding-bottom: 14px;
+        }
+        .sf-reset .traces li {
+            font-size: 12px;
+            color: #868686;
+            padding: 5px 4px;
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        .sf-reset #logs .traces li.error {
+            font-style: normal;
+            color: #AA3333;
+            background: #f9ecec;
+        }
+        .sf-reset #logs .traces li.warning {
+            font-style: normal;
+            background: #ffcc00;
+        }
+        /* fix for Opera not liking empty <li> */
+        .sf-reset .traces li:after {
+            content: "\00A0";
+        }
+        .sf-reset .trace {
+            border: 1px solid #D3D3D3;
+            padding: 10px;
+            overflow: auto;
+            margin: 10px 0 20px;
+        }
+        .sf-reset .block-exception {
+            -moz-border-radius: 16px;
+            -webkit-border-radius: 16px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            background-color: #f6f6f6;
+            border: 1px solid #dfdfdf;
+            padding: 30px 28px;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+        .sf-reset .block-exception div {
+            color: #313131;
+            font-size: 10px;
+        }
+        .sf-reset .block-exception-detected .illustration-exception,
+        .sf-reset .block-exception-detected .text-exception {
+            float: left;
+        }
+        .sf-reset .block-exception-detected .illustration-exception {
+            width: 152px;
+        }
+        .sf-reset .block-exception-detected .text-exception {
+            width: 670px;
+            padding: 30px 44px 24px 46px;
+            position: relative;
+        }
+        .sf-reset .text-exception .open-quote,
+        .sf-reset .text-exception .close-quote {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            color: #C9C9C9;
+            font-size: 8em;
+        }
+        .sf-reset .open-quote {
+            top: 0;
+            left: 0;
+        }
+        .sf-reset .close-quote {
+            bottom: -0.5em;
+            right: 50px;
+        }
+        .sf-reset .block-exception p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sf-reset .block-exception p a,
+        .sf-reset .block-exception p a:hover {
+            color: #565656;
+        }
+        .sf-reset .logs h2 {
+            float: left;
+            width: 654px;
+        }
+        .sf-reset .error-count, .sf-reset .support {
+            float: right;
+            width: 170px;
+            text-align: right;
+        }
+        .sf-reset .error-count span {
+             display: inline-block;
+             background-color: #aacd4e;
+             -moz-border-radius: 6px;
+             -webkit-border-radius: 6px;
+             border-radius: 6px;
+             padding: 4px;
+             color: white;
+             margin-right: 2px;
+             font-size: 11px;
+             font-weight: bold;
+        }
+        .sf-reset .support a {
+            display: inline-block;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            padding: 4px;
+            color: #000000;
+            margin-right: 2px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .sf-reset .toggle {
+            vertical-align: middle;
+        }
+        .sf-reset .linked ul,
+        .sf-reset .linked li {
+            display: inline;
+        }
+        .sf-reset #output-content {
+            color: #000;
+            font-size: 12px;
+        }
+        .sf-reset #traces-text pre {
+            white-space: pre;
+            font-size: 12px;
+            font-family: monospace;
+        }
+
+        .myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+    box-shadow:inset 0px 1px 0px 0px #caefab;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+    background:-moz-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:-webkit-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:-o-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:-ms-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811',GradientType=0);
+    background-color:#77d42a;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #268a16;
+    display:inline-block;
+    cursor:pointer;
+    color:#306108;
+    font-family:Arial;
+    font-size:42px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #aade7c;
+    margin-bottom: 30px;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+    background:-moz-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:-webkit-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:-o-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:-ms-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a',GradientType=0);
+    background-color:#5cb811;
+    margin-left: 700px;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+.pimmel  {
+    font-size: 40px;
+    color: yellow; /* fick dich telekom */
+}
+</style>
+{% endblock %}
+
+{% block title %}
+    Oh man, echt schon wieder?
+{% endblock %}
+
+{% block body %}
+    <div class="exception-summary {{ exception.message is empty ? 'exception-without-message' }}">
+    <div class="exception-metadata">
+        <div class="container">
+            <h2 class="exception-hierarchy">
+                {% for previousException in exception.allPrevious|reverse %}
+                    <a href="#trace-box-{{ loop.revindex + 1 }}">{{ previousException.class|abbr_class }}</a>
+                    <span class="icon">{{ include('@Twig/images/chevron-right.svg') }}</span>
+                {% endfor %}
+                <a href="#trace-box-1">{{ exception.class|abbr_class }}</a>
+            </h2>
+            <h2 class="exception-http">
+                HTTP 666 <small>Mit voller Absicht und pseudozufällig</small>
+            </h2>
+        </div>
+    </div>
+
+    <div class="exception-message-wrapper">
+        <div class="container">
+            <h1 class="break-long-words exception-message {{ exception.message|length > 180 ? 'long' }}">
+                {{- exception.message|nl2br|format_file_from_text -}}
+            </h1>
+
+            <div class="exception-illustration hidden-xs-down">
+                {{ include('@Twig/images/symfony-ghost.svg') }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="pimmel">
+        Bitte laden sie die Seite nicht erneut um weitere zufällige Fehler zu vermeiden!
+    </h1>
+    <button class="myButton" onClick="dashfdhjasfvgkdjsvf(); alert('Wollen sie سواء أنقرت بالفأرة على لوحة المفاتيح الافتراضية هذه أم استخدمت لوحة المفاتيح الخاصة بك، فكلاهما ينتج هنا الخط العربي! أما حين تكتب بلوحة المفاتيح الخاصة بك في الحقل أعلاه فتثبّت أنه قد تم في نظام التشغيل الخاص بك اختيار تخطيط لوحة المفاتيح الألماني (DE) غير الإنجليزي ولا تخطيطٍ آخر، وإلا فجرب الصيغة الإنجليزية أو الفرنسية أو الاسبانية لهذه الصفحة. أما إن أردت أن لا ت  Überlegen sie gut...'); window.location.reload();">Hartnäckigkeit zahlt sich manchmal aus!<br/> SEITE NEU LADEN</button>
+</div>
+
+<div class="container">
+    <div class="sf-tabs">
+        <div class="tab">
+            {% set exception_as_array = exception.toarray %}
+            {% set _exceptions_with_user_code = [] %}
+            {% for i, e in exception_as_array %}
+                {% for trace in e.trace %}
+                    {% if (trace.file is not empty) and ('/vendor/' not in trace.file) and ('/var/cache/' not in trace.file) and not loop.last %}
+                        {% set _exceptions_with_user_code = _exceptions_with_user_code|merge([i]) %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            <h3 class="tab-title">
+                {% if exception_as_array|length > 1 %}
+                    Exceptions <span class="badge">{{ exception_as_array|length }}</span>
+                {% else %}
+                    Exception
+                {% endif %}
+            </h3>
+
+            <div class="tab-content">
+                {% for i, e in exception_as_array %}
+                    {{ include('@Twig/Exception/traces.html.twig', { exception: e, index: loop.index, expand: i in _exceptions_with_user_code or (_exceptions_with_user_code is empty and loop.first) }, with_context = false) }}
+                {% endfor %}
+            </div>
+        </div>
+
+        {% if logger %}
+        <div class="tab {{ logger.logs is empty ? 'disabled' }}">
+            <h3 class="tab-title">
+                Logs
+                {% if logger.counterrors ?? false %}<span class="badge status-error">{{ logger.counterrors }}</span>{% endif %}
+            </h3>
+
+            <div class="tab-content">
+                {% if logger.logs %}
+                    {{ include('@Twig/Exception/logs.html.twig', { logs: logger.logs }, with_context = false)  }}
+                {% else %}
+                    <div class="empty">
+                        <p>No log messages</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="tab">
+            <h3 class="tab-title">
+                {% if exception_as_array|length > 1 %}
+                    Stack Traces <span class="badge">{{ exception_as_array|length }}</span>
+                {% else %}
+                    Stack Trace
+                {% endif %}
+            </h3>
+
+            <div class="tab-content">
+                {% for e in exception_as_array %}
+                    {{ include('@Twig/Exception/traces_text.html.twig', { exception: e, index: loop.index, num_exceptions: loop.length }, with_context = false) }}
+                {% endfor %}
+            </div>
+        </div>
+
+        {% if currentContent is not empty %}
+        <div class="tab">
+            <h3 class="tab-title">Output content</h3>
+
+            <div class="tab-content">
+                {{ currentContent }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+
+<h3>und vergiss niemals das zauberwort einzugeben!</h3>
+<input type="text"><button alt="nö du atrappe, aber du kannst ja anders darum bitten ;P">ja?</button>
+
+{% endblock %}

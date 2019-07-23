@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style>
+	body {
+		font-size: 16px;
+		font-family: 'Consolas';
+	}
+	.barefoot {
+		display: block;
+		font-size: 14px;
+		font-style: italic;
+		margin-left: 16px;
+	}
+	.logo {
+		float: right;
+		width: 250px;
+		height: 250px;
+	}
+</style>
+
+<h1>DIN: Rautavistische Software-Entwicklung (v3.14)</h1>
+
+<img class="logo" src="/static/logo.jpg" alt="missing alt attribute" />
+
+<h2>Schade, dass sie hier sind!</h2>
+<p>
+	Mehr Informationen als sie jemals aufnehmen können finden sie (und er) <a target="_blank" title="The title attribute specifies extra information about an element." href="http://116.203.139.180/">HIER</a> und vor allem auf folgenden Seiten:<br/>
+	In ihrer (und seiner) Landesprache unter <a title="The title attribute is part of the Global Attributes, and can be used on any HTML element." href="http://google.de/">google.de</a> oder aber auch verf&uuml;gbar auf Englisch unter <a title="Use of the title attribute in an HTML document." href="http://google.com/">google.com</a> <em>(ps: wir lehnen Anglizismus prinzipiell ab)</em>.<br/>
+	<br/>
+	Sollten sie sich dennoch genötigt fühlen weiter zu lesen, können wir sie aufgrund der Architektur des <em title="World Wide Web">Welt Weiten geWebes</em> leider nicht davon abhalten...<br/>
+	Nichtsdestotrotz geben wir unser Bestes, ihnen den Aufenthalt auf unserer <em title="Homepage">Heimseite</em> möglichst unangenehm zu gestalten und bitten sie eindringlichst darum, dieser in Zukunft fern zu bleiben!
+</p>
+
+<h2>&bdquo;Die Rautavistik ist die Lehre von den rautavistischen Dingen&rdquo;</h2>
+<p>
+	Die <strong>Beratungsstelle für Rautavistische Software</strong> hat ihre Hauptniederlassung in Neuwied, Deutschland. Wir beraten sie gerne bezüglich rautavistischer Software-Projekte, -Architekturen, -Vorgehensweisen, -Entwicklung, -Programmierung und nicht zuletzt ihrem rautavistischen Software-Produkt. Die Entwicklung dieses <em title="Web-Auftritt">Gewebe-Auftritts</em> wie auch unsere Beratung selbst unterliegen ebenfalls der Rautavistik. Somit gewährleisten wir stets eine äußerst überschaubare und weiterhin minderbare Qualität!<br/>
+	<br/>
+	Wenn sie noch keine Vorkenntnisse in der Rautavistik besitzen, sind sie hier wahrscheinlich falsch. Immatrikulieren sie sich bestenfalls zunächst an der <a title="Emergency exception: No title was given." href="http://www.ru-eschweilerhof.de/">Rautavistischen Universität Eschweilerhof</a> oder lesen sie sich zumindest in das <a alt="missing alt attribute" title="The information is most often shown as a tooltip text when the mouse moves over the element." target="_blank" href="http://www.rautavistik.de/">Thema</a> ein.
+</p>
+
+<h2>Straßenkarte</h2>
+<p>
+	Bitte haben sie verständnis dafür, dass sich diese <em title="Online-Präsenz">angeschlossene Präsenz</em> derzeit noch im Aufbau befindet und auch noch keine vollständige <em title="Roadmap">Straßenkarte</em> erarbeitet wurde.<br/>
+	<br/>
+	Wir haben uns dem Researching und Coaching im Bereich der #.rtrim(e).avatisischen Software verschrieben um mehr über die folgenden Themen zu erfahren und Wissen zu vermitteln:
+	<ul>
+		<li>
+			<h3>Senknung der Produktiviät und Prozess-Qualität</h3>
+			<ul>
+				<li>Improvisation, Integration, Iteration, Iteration und Iteration unötiger Arbeitsschritte</li>
+				<li>Erarbeitung und Anwendung von Worst-Practices</li>
+				<li>rautavistische Softwaredokumentation</li>
+				<li>repititive, kontextlose und keine Quellcode-Kommentare</li>
+				<li>Generierung von zufälligen Code-Segmenten inkl. Ergebnisbeseitigung</li>
+				<li>Einsatz von Tools die den Arbeitsfluss behindern und die Möglichkeiten einschränken</li>
+				<li>Manuelle Build- und Deployment Systeme sowie Fake-Monitoring</li>
+				<li>Unsemantische Versionierung: Konstante und wahllose Versions-Nummern</li>
+				<li>Schaffung von Inselwissen und nicht austauschbaren Komponenten</li>
+				<li>Vergabe rautavistischer Variablen-, Klassen- und Methoden-Namen</li>
+				<li>Umsetzung gemischtsprachigen Quell-Codes</li>
+				<li>Ineffiziente Reimplementierung nativer Funktionen</li>
+				<li>Die Qual der Wahl: Exotische Programmiersprachen und schlecht dokumentierte Frameworks</li>
+				<li>Reduzierung der Les- und Wartbarkeit mittels Rerefaktorisierung</li>
+			</ul>
+		</li>
+		<br/>
+		<li>
+			<h3>Manipulation der Laufzeitumgebung für unvorhersehbare Konsequenzen</h3>
+			<ul>
+				<li>Erarbeitung und Betrieb von Continuous Desintegration</li>
+				<li>Möglichkeiten der Laufzeitverschlechterung</li>
+				<li>Steigerung der Hardwarebelastung für Client und Server</li>
+				<li>Methoden zur Speicherplatzverschwendung</li>
+				<li>Forcierung von Worst-Case Szenarios</li>
+			</ul>
+		</li>
+		<br/>
+		<li>
+			<h3>Minimierung der Usability und Produkt-Qualität</h3>
+			<ul>
+				<li>Symptombehandlung statt Problemanalyse: Quickhacks und Workarounds</li>
+				<li>Design einer ausladenden Benutzeroberfläche</li>
+				<li>Ideen für den Entwurf von Algorithmen die rein gar nichts tun</li>
+				<li>Implementierung von Anti-Pattern</li>
+				<li>Entwurf einer möglichst nervenraubenden User-Experience</li>
+				<li>Zufällige Exceptions und Ausgabe desinformativer Fehlermeldungen</li>
+				<li>Einbindung nicht genutzer Software-Bibliotheken</li>
+				<li>Ladezeiten- und Kostenmaximierung durch Trafficverschwendung</li>
+				<li>Ausweitung von Sicherheitslücken durch Nutzung veralteter Pakete</li>
+			</ul>
+		</li>
+	</ul>
+	<br/>
+	<em>bei entsprechender Nachfrage möchten wir auch Kickstart- und Intensiv-Workshops anbieten. Wenden sie sich bei Interesse bitte an jemand anderen!</em><br/>
+	<br/>
+	Es ist davon auszugehen, dass alles fertig ist wenn es erledigt wurde. Das können wir allerdings nicht versprechen, denn man bekommt leider nicht immer das was man kriegt.<br/>
+	<br/>
+	<span class="barefoot">
+		Mit freundlichen Grüßen<br/>
+		gez. vom Leben
+	</span>
+	<br/>
+	<br/>
+</p>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+  	//window.setTimeout(function() { window.location.reload(); }, 2500)
+;ra  </script>
+<!--script>
+	let getRandomColor = function() {
+		let letters = '0123456789ABCDEF';
+		let color = '#';
+		for (var i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)];
+		}
+
+		return color;
+	};
+
+	window.setTimeout(function() {
+		let $body = $('body');
+		let $div = $('div');
+		$div.prop("contentEditable", true);
+		let text = $div.text();
+		window.setInterval(function() {
+			$body.css('background-color', getRandomColor());
+		    var chars = text.split("");
+		    $div.empty("");
+		    $.each(chars, function() {
+		        $("<span>").text(this).css({
+		        	fontSize: Math.floor(Math.random() * 100) + 1,
+		            color: getRandomColor()
+		        }).appendTo($div);
+		    });
+		}, 10);
+		window.location.reload();
+	}, 7500);
+
+</script-->
+
+{% endblock %}
