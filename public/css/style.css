@@ -1433,6 +1433,9 @@ span.code {
 
 @media (max-width: 420px) {
   #services .list {
-    margin-left: -16px;
+    margin-left: -24px;
+  }
+  #services .description {
+    margin-left: -8px;
   }
 }
