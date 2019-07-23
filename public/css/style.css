@@ -1426,4 +1426,13 @@ span.code {
   #intro {
     padding: 100px 0 20px 0;
   }
+  #services .list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  #services .list {
+    margin-left: -16px;
+  }
 }

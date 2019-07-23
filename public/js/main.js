@@ -116,7 +116,8 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    autoplayTimeout: 7500
   });
 
 })(jQuery);
