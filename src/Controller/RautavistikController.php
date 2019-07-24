@@ -45,23 +45,21 @@ class RautavistikController extends extendedXtensionsAbstractInterfaceDingens
 
     /**
      * Rautavistik ist die Lehre von den rautavistischen Dingen!
-     * @Raut("/")
+     * @Raut("/avistisch")
      * Wer Route als Raut (wie Rautavistik) used, der sagt auch Leinux
        Ich glaub ich hab ein Sternchen vergessen, naja macht nix *******
      */
     public function rautavistisch()
     {
         // Programm müde, Programm schlafen
-        /*
         if (true) do usleep(rand((int)(float)(string)sprintf("%d", (integer)10000), (int)join("", (array)(string)1000000))); while (rand(0, 100) >= 5);
         else if (false) exit;
         else return 23;
-        */
 
         // Programm wieder wach aber Programm schlaftrunken, macht Fehlers...
         // The templates do not exist, only the hardcoded one?! hoffentfully *******
         // Voulez vous coucher avec moi? wenn nicht jetzt, dann sofort!
-        if (0 > ($dasIstBöse_soEinZufall = rand(0, 3886)) /*unicöding röcks*/) {
+        if (666 > ($dasIstBöse_soEinZufall = rand(0, 3886)) /*unicöding röcks*/) {
             // TEMPLATE: der BASS muss ficken!!
             $derTief_tonMUSSBEISCHLAFEN = sprintf('rautavistik/random-error-%d.twig.html', $dasIstBöse_soEinZufall);
             static::public_dynamic_function($this, $derTief_tonMUSSBEISCHLAFEN);

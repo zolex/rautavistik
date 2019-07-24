@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144478449-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144478449-1');
+  </script>
+
+  <!-- Page metadata -->
   <meta charset="utf-8">
   <title>{% block title %}BSfrS - Beratungsstelle für rautavistische Software{% endblock %}</title>
-  {% block stylesheets %}{% endblock %}
-
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Rautavistik, rautavistische Software, Software Entwicklung, Softwareentwicklung, rautavistic software development" name="keywords">
-  <meta content="Die BSfrS unterstützt sie bei ihren rautavistischen Software Projekten." name="description">
+  <meta content="{% block keywords %}Rautavistik, rautavistische Software, Software Entwicklung, Softwareentwicklung, rautavistic software development{% endblock %}" name="keywords">
+  <meta content="{% block description %}Die BSfrS unterstützt sie bei ihren rautavistischen Software Projekten.{% endblock %}" name="description">
 
   <!-- Facebook -->
-  <meta property="og:url"                content="https://www.bsfrs.de/" />
-  <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="BSfrS - Beratungsstelle für rautavistische Software" />
-  <meta property="og:description"        content="Es ist davon auszugehen, dass alles fertig ist wenn es erledigt wurde." />
-  <meta property="og:image"              content="https://www.bsfrs.de/facebook-post.png" />
+  <meta property="og:url" content="{% block og_url %}https://www.bsfrs.de/{% endblock %}" />
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}" />
+  <meta property="og:title" content="{% block og_title %}BSfrS - Beratungsstelle für rautavistische Software{% endblock %}" />
+  <meta property="og:description" content="{% block og_description %}Es ist davon auszugehen, dass alles fertig ist wenn es erledigt wurde.{% endblock %}" />
+  <meta property="og:image" content="{% block og_image %}https://www.bsfrs.de/facebook-post.png{% endblock %}" />
 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -39,6 +48,7 @@
   <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
+  {% block stylesheets %}{% endblock %}
   <link href="/css/style.css" rel="stylesheet">
 </head>
 
@@ -52,16 +62,16 @@
 
       <div class="logo float-left">
         <a href="#intro" class="scrollto"><img src="/apple-touch-icon.png" alt="" class="logo"></a>
-        <h1 class="brand text-light"><a href="#intro"><span>BSfrS</span></a></h1>
+        <h1 class="brand text-light"><a href="/#intro"><span>BSfrS</span></a></h1>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Über uns</a></li>
-          <li><a href="#services">Leistungen</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#clients">Kunden</a></li>
+          <li><a href="/#about">Über uns</a></li>
+          <li><a href="/#services">Leistungen</a></li>
+          <li><a href="/#team">Team</a></li>
+          <li><a href="/#clients">Kunden</a></li>
 
           <!--li class="drop-down"><a href="">Drop Down</a>
             <ul>
@@ -106,32 +116,31 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#intro">Home</a></li>
-              <li><a href="#about">Über uns</a></li>
-              <li><a href="#services">Leistungen</a></li>
-              <li><a href="#why-us">Warum wir?</a></li>
-              <li><a href="#team">Testicles</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#clients">Kunden</a></li>
+              <li><a href="/#intro">Home</a></li>
+              <li><a href="/#about">Über uns</a></li>
+              <li><a href="/#services">Leistungen</a></li>
+              <li><a href="/#why-us">Warum wir?</a></li>
+              <li><a href="/#team">Testicles</a></li>
+              <li><a href="/#team">Team</a></li>
+              <li><a href="/#clients">Kunden</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
+            <h4>Ihr Ansprechpartner</h4>
             <p>
-              Irgendwoanders 1 <br>
-              56564 Neuwied<br>
-              Deutschland <br>
-              <strong>Phone:</strong> +49 1520 8335083<br>
-              <strong>Email:</strong> info@example.com<br>
+              Andreas Linden<br/>
+              56564 Neuwied<br/>
+              Deutschland <br/>
+              andreas.linden@bsfrs.de<br/>
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="https://twitter.com/BSfrS_official" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a target="_blank" href="https://www.facebook.com/BSfrS.official" class="facebook"><i class="fa fa-facebook"></i></a>
+              <!--a href="#" class="instagram"><i class="fa fa-instagram"></i></a-->
+              <!--a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a-->
+              <a target="_blank" href="https://www.xing.com/profile/Andreas_Linden2" class="xing"><i class="fa fa-xing"></i></a>
             </div>
 
           </div>
@@ -150,7 +159,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>BSfrS</strong>. All Rights Lost
+        &copy; Copypaste 2019 <strong>BSfrS</strong>. All Rights Lost.
       </div>
       <div class="credits">
 
