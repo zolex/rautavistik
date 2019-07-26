@@ -1,14 +1,3 @@
-/*
-  Theme Name: NewBiz
-  Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
 body {
   background: #fff;
   color: #444;
@@ -122,7 +111,14 @@ h6 {
 
 span.code {
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 12px;
   white-space: nowrap;
+  display: inline-block;
+  border: 1px solid #cdcdcd;
+  padding: 0px 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -213,8 +209,7 @@ span.code {
   text-decoration: underline;
 }
 
-#intro .intro-info .btn-get-started,
-#intro .intro-info .btn-services {
+.btn-get-started, .btn-services {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -227,26 +222,48 @@ span.code {
   color: #fff;
 }
 
-#intro .intro-info .btn-get-started {
+.btn-get-started {
   background: #007bff;
   border: 2px solid #007bff;
   color: #fff;
 }
 
-#intro .intro-info .btn-get-started:hover {
+.btn-get-started:hover {
   background: none;
   border-color: #fff;
   color: #fff;
 }
 
-#intro .intro-info .btn-services {
+.btn-services {
   border: 2px solid #fff;
 }
 
-#intro .intro-info .btn-services:hover {
+.btn-services:hover {
   background: #007bff;
   border-color: #007bff;
   color: #fff;
+}
+
+.btn-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+
+  background: #fff;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-more:hover {
+  color: #fff;
+  background: #007bff;
+  border-color: #007bff;
 }
 
 /*--------------------------------------------------------------
@@ -642,6 +659,11 @@ span.code {
   color: #111;
 }
 
+#services h5.title {
+  margin-top: 32px;
+  font-size: 16px;
+}
+
 #services .box:hover .title a {
   color: #007bff;
 }
@@ -655,6 +677,10 @@ span.code {
 
 #services .list {
   margin-left: 32px;
+}
+
+#services .btn-more {
+  margin-left: 72px;
 }
 
 #why-us {
@@ -1345,6 +1371,11 @@ span.code {
   color: #f1f7ff;
 }
 
+a.language {
+  font-size: 10px;
+  padding-top: 12px;
+}
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1433,8 +1464,11 @@ span.code {
     padding: 100px 0 20px 0;
   }
   #services .list {
-    margin-left: 0
-;  }
+    margin-left: 0;
+  }
+  #services .btn-more {
+    margin-left: 32px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1443,5 +1477,8 @@ span.code {
   }
   #services .description {
     margin-left: -8px;
+  }
+  #services .btn-more {
+    margin-left: 16px;
   }
 }

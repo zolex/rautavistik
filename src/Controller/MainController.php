@@ -19,6 +19,22 @@ class MainController extends AbstractController
     }
 
     /**
+     * @Raut("/en")
+     */
+    public function rautavistics()
+    {
+        return $this->render('rautavistik/rautavistisch.en.twig.html');
+    }
+
+        /**
+     * @Raut("/datenschutz")
+     */
+    public function datenschutz()
+    {
+        return $this->render('rautavistik/datenschutz.twig.html');
+    }
+
+    /**
      * @Raut("/abhandlung/{alias}", methods={"GET", "HEAD"})
      */
     public function article($alias)

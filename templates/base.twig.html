@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% block language %}de{% endblock %}">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144478449-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,98 +11,87 @@
     gtag('config', 'UA-144478449-1');
   </script>
 
-  <!-- Page metadata -->
+  <!-- Pagemeta -->
   <meta charset="utf-8">
-  <title>{% block title %}BSfrS - Beratungsstelle für rautavistische Software{% endblock %}</title>
+  <title>{% block title %}BSfrS - Die Beratungsstelle für rautavistische Software{% endblock %}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="{% block keywords %}Rautavistik, rautavistische Software, Software Entwicklung, Softwareentwicklung, rautavistic software development{% endblock %}" name="keywords">
+  <meta content="{% block keywords %}Rautavistik, rautavistische Software, Software Entwicklung, Softwareentwicklung{% endblock %}" name="keywords">
   <meta content="{% block description %}Die BSfrS unterstützt sie bei ihren rautavistischen Software Projekten.{% endblock %}" name="description">
+  <link rel="alternate" hreflang="de" href="https://www.bsfrs.de"/>
+  <link rel="alternate" hreflang="en" href="https://www.bsfrs.de/en"/>
+  <link rel="alternate" hreflang="x-default" href="https://www.bsfrs.de/en"/>
 
   <!-- Facebook -->
   <meta property="og:url" content="{% block og_url %}https://www.bsfrs.de/{% endblock %}" />
   <meta property="og:type" content="{% block og_type %}website{% endblock %}" />
   <meta property="og:title" content="{% block og_title %}BSfrS - Beratungsstelle für rautavistische Software{% endblock %}" />
   <meta property="og:description" content="{% block og_description %}Es ist davon auszugehen, dass alles fertig ist wenn es erledigt wurde.{% endblock %}" />
-  <meta property="og:image" content="{% block og_image %}https://www.bsfrs.de/facebook-post.png{% endblock %}" />
+  <meta property="og:image" content="{% block og_image %}https://www.bsfrs.de/img/facebook-post-de.png{% endblock %}" />
 
   <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="/favicon.ico" alt="BSfrS Logo">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico"  alt="BSfrS Logo">
+  <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png" alt="BSfrS Logo">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png"  alt="BSfrS Logo">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" alt="BSfrS Logo">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" alt="BSfrS Logo">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" alt="BSfrS Logo">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" href="/favicon-57.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png" alt="BSfrS Logo">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" alt="BSfrS Logo">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/favicon-144.png" alt="BSfrS Logo">
+  <meta name="msapplication-config" content="/browserconfig.xml">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
+  <!-- CSS -->
   <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
   <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="/lib/animate/animate.min.css" rel="stylesheet">
   <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
   {% block stylesheets %}{% endblock %}
   <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <!--==========================
-  Header
-  ============================-->
   <header id="header" class="fixed-top">
     <div class="container">
 
       <div class="logo float-left">
-        <a href="#intro" class="scrollto"><img src="/apple-touch-icon.png" alt="" class="logo"></a>
+        <a href="#intro" class="scrollto"><img src="/favicon-120.png" alt="BSfrS Logo" class="logo"></a>
         <h1 class="brand text-light"><a href="/#intro"><span>BSfrS</span></a></h1>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
+          {% block topnav %}
+          <li class="active"><a href="/#intro">Home</a></li>
           <li><a href="/#about">Über uns</a></li>
           <li><a href="/#services">Leistungen</a></li>
           <li><a href="/#team">Team</a></li>
           <li><a href="/#clients">Kunden</a></li>
-
-          <!--li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li-->
-          <!--li><a href="#contact">Contact Us</a></li-->
+          <li><a class="language" href="/en" title="read english version"><img src="/img/en.png" alt="EN"> english</a></li>
+          {% endblock %}
         </ul>
-      </nav><!-- .main-nav -->
+      </nav>
       
     </div>
-  </header><!-- #header -->
+  </header>
 
   {% block body %}{% endblock %}
   {% block javascripts %}{% endblock %}
 
-  <!--==========================
-    Footer
-  ============================-->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -116,13 +105,13 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="/#intro">Home</a></li>
-              <li><a href="/#about">Über uns</a></li>
+              {% block bottomnav %}
+              <li><a href="/#about">Über us</a></li>
               <li><a href="/#services">Leistungen</a></li>
-              <li><a href="/#why-us">Warum wir?</a></li>
-              <li><a href="/#team">Testicles</a></li>
               <li><a href="/#team">Team</a></li>
               <li><a href="/#clients">Kunden</a></li>
+              <li><a href="/datenschutz">Datenschutz</a></li>
+              {% endblock %}
             </ul>
           </div>
 
@@ -138,8 +127,7 @@
             <div class="social-links">
               <a target="_blank" href="https://twitter.com/BSfrS_official" class="twitter"><i class="fa fa-twitter"></i></a>
               <a target="_blank" href="https://www.facebook.com/BSfrS.official" class="facebook"><i class="fa fa-facebook"></i></a>
-              <!--a href="#" class="instagram"><i class="fa fa-instagram"></i></a-->
-              <!--a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a-->
+              <a target="_blank" href="https://www.instagram.com/bsfrs.official/" class="instagram"><i class="fa fa-instagram"></i></a>
               <a target="_blank" href="https://www.xing.com/profile/Andreas_Linden2" class="xing"><i class="fa fa-xing"></i></a>
             </div>
 
@@ -165,13 +153,10 @@
 
       </div>
     </div>
-  </footer><!-- #footer -->
+  </footer>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
 
-  <!-- JavaScript Libraries -->
   <script src="/lib/jquery/jquery.min.js"></script>
   <script src="/lib/jquery/jquery-migrate.min.js"></script>
   <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -183,10 +168,6 @@
   <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="/lib/isotope/isotope.pkgd.min.js"></script>
   <script src="/lib/lightbox/js/lightbox.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="/contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
   <script src="/js/main.js"></script>
 
 </body>
