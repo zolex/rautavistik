@@ -99,7 +99,9 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h3>BSfrS</h3>
-            <p>Es ist davon auszugehen, dass alles fertig ist wenn es erledigt wurde. Das können wir allerdings nicht versprechen, denn man bekommt leider nicht immer das was man kriegt.</p>
+            <p>
+              {% block bottomline %}Es ist davon auszugehen, dass alles fertig ist wenn es erledigt wurde. Das können wir allerdings nicht versprechen, denn man bekommt leider nicht immer das was man kriegt.{% endblock %}
+            </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
@@ -135,7 +137,9 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Unser Newsletter</h4>
-            <p>Wir versenden keine Newsletter und das Formular tut auch nichts, aber sie können dennoch gerne mal Ihre E-Mail Adresse eintragen und auf den Knopf drücken.</p>
+            <p>
+              {% block newsletter %}Wir versenden keine Newsletter und das Formular tut auch nichts, aber sie können dennoch gerne mal Ihre E-Mail Adresse eintragen und auf den Knopf drücken.{% endblock %}
+            </p>
             <form action="" method="post">
               <input type="email" name="email"><input type="button" value="Subscribe">
             </form>
