@@ -1,4 +1,5 @@
 {% extends 'base.twig.html' %}
+{% use 'en.base.twig.html' %}
 
 {% block language %}en{% endblock %}
 {% block title %}BSfrS: Consulting Center for rautavistic Software{% endblock %}
@@ -10,30 +11,6 @@
 {% block og_description %}It can be assumed that everything is done when it's done.{% endblock %}
 {% block og_image %}https://www.bsfrs.de/img/facebook-post-en.png{% endblock %}
 
-{% block topnav %}
-<li class="active"><a href="/#intro">Home</a></li>
-<li><a href="/#about">About us</a></li>
-<li><a href="/#services">Services</a></li>
-<li><a href="/#team">Team</a></li>
-<li><a href="/#clients">Clients</a></li>
-<li><a class="language" href="/" title="Deutsche Version lesen"><img src="/img/de.png" alt="DE"> deutsch</a></li>
-{% endblock %}
-
-{% block bottomnav %}
-<li><a href="/#about">About us</a></li>
-<li><a href="/#services">Services</a></li>
-<li><a href="/#team">Team</a></li>
-<li><a href="/#clients">Clients</a></li>
-<li><a href="/datenschutz">Dataprotection</a></li>
-{% endblock %}
-
-{% block bottomline %}
-It can be assumed that everything is done when it's done. We can not promise that, because unfortunately you do not always get what you receive.
-{% endblock %}
-
-{% block newsletter %}
-We do not send any newsletters and the form does not do anything, but you are welcome to enter your e-mail address and press the button.
-{% endblock %}
 
 {% block body %}
 
@@ -178,7 +155,7 @@ We do not send any newsletters and the form does not do anything, but you are we
                   <li>reduction of readability and maintainability using rerefactoring</li>
                 </ul>
 
-                <a class="btn btn-more" href="/abhandlung/produktivitaet-und-prozess-qualitaet" title="Wir sorgen dafür, dass sie und ihre Mitarbeiter unproduktiv werden!">mehr lesen</a>
+                <a class="btn btn-more" href="/en/paper/productivity-and-process-quality" title="We make sure that you and your employees become unproductive!">read more</a>
               </p>
             </div>
           </div>

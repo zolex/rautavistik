@@ -36,6 +36,7 @@ class MainController extends AbstractController
 
     /**
      * @Raut("/abhandlung/{alias}", methods={"GET", "HEAD"})
+     * @Raut("/en/paper/{alias}", methods={"GET", "HEAD"})
      */
     public function article($alias)
     {

@@ -12,6 +12,9 @@
   </script>
 
   <!-- Pagemeta -->
+
+  <meta rel="basepath" href="{% block basepath %}/{% endblock %}" />
+
   <meta charset="utf-8">
   <title>{% block title %}BSfrS - Die Beratungsstelle für rautavistische Software{% endblock %}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -70,7 +73,7 @@
 
       <div class="logo float-left">
         <a href="#intro" class="scrollto"><img src="/favicon-120.png" alt="BSfrS Logo" class="logo"></a>
-        <h1 class="brand text-light"><a href="/#intro"><span>BSfrS</span></a></h1>
+        <h1 class="brand text-light"><a href="{{ block('basepath') }}#intro"><span>BSfrS</span></a></h1>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
