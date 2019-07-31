@@ -20,9 +20,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="{% block keywords %}Rautavistik, rautavistische Software, Software Entwicklung, Softwareentwicklung{% endblock %}" name="keywords">
   <meta content="{% block description %}Die BSfrS unterstützt sie bei ihren rautavistischen Software Projekten.{% endblock %}" name="description">
-  <link rel="alternate" hreflang="de" href="https://www.bsfrs.de"/>
-  <link rel="alternate" hreflang="en" href="https://www.bsfrs.de/en"/>
-  <link rel="alternate" hreflang="x-default" href="https://www.bsfrs.de/en"/>
+  <link rel="alternate" hreflang="de" href="{% block alternate_de %}https://www.bsfrs.de{% endblock %}"/>
+  <link rel="alternate" hreflang="en" href="{% block alternate_en %}https://www.bsfrs.de/en{% endblock %}"/>
+  <link rel="alternate" hreflang="x-default" href="{{ block('alternate_en') }}"/>
 
   <!-- Facebook -->
   <meta property="og:url" content="{% block og_url %}https://www.bsfrs.de/{% endblock %}" />
@@ -84,7 +84,7 @@
           <li><a href="/#services">Leistungen</a></li>
           <li><a href="/#team">Team</a></li>
           <li><a href="/#clients">Kunden</a></li>
-          <li><a class="language" href="/en" title="read english version"><img src="/img/en.png" alt="EN"> english</a></li>
+          <li><a class="language" href="{{ block('alternate_en') }}" title="read english version"><img src="/img/en.png" alt="EN"> english</a></li>
           {% endblock %}
         </ul>
       </nav>

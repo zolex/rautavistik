@@ -664,6 +664,11 @@ span.code {
   font-size: 16px;
 }
 
+#services h6.title {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
 #services .box:hover .title a {
   color: #007bff;
 }

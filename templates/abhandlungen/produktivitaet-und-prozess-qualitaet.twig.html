@@ -1,5 +1,8 @@
 {% extends 'base.twig.html' %}
 
+{% block alternate_de %}https://www.bsfrs.de/abhandlung/produktivitaet-und-prozess-qualitaet{% endblock %}
+{% block alternate_en %}https://www.bsfrs.de/en/paper/productivity-and-process-quality{% endblock %}
+
 {% block title %}BSfrS - Senkung der Produktivität und Prozess-Qualität{% endblock %}
 {% block keywords %}Rautavistik, Vorgehensweisen, Methoden, rautavistische Software, Entwicklungsprozess, Software-Entwicklung{% endblock %}
 {% block description %}Die Beratungsstelle für rautavistische Software informiert über Methoden zur Senkung der Produktivität und der Prozess-Qualität.{% endblock %}
@@ -49,12 +52,25 @@
               </p>
               <h5 class="title">Improvisation, Integration, Iteration, Iteration und Iteration unötiger Arbeitsschritte:</h5>
               <p class="description">
-                Eine einfach zu erlernende Methode für die Produktivitätsminimierung ist das Improvisieren unnötiger Arbeitsschritte. Tun sie also einfach spontan irgendetwas anderes als das, was sie eigentlich erledigen sollten. Vermeiden sie es Kolaborations- und Ticketsysteme wie JIRA, Mantis, trac oder Trello zu benutzen. Diese lenken sie nur vom Improvisieren ab und verhindern, dass ein und die selbe Aufgabe parallel von mehreren Mitarbeiten gleichzeitig erledigt wird.<br/>
+                Eine einfach zu erlernende Methode für die Produktivitätsminimierung ist das Improvisieren unnötiger Arbeitsschritte. Tun sie also einfach spontan irgendetwas anderes als das, was sie eigentlich erledigen sollten. Ausgedehnte Kaffee- und Mittagspausen sind dafür schonmal ein guter Anfang, aber auch das Surfen im Netz, Chatten und Videostreaming sind sehr gute Alternativen.<br/>
                 <br/>
                 Sobald sie es geschafft haben regelmäßig unnötige Arbeitschritte in ihren Alltag zu integrieren, können sie die Produktivität nochmals deutlich senken, indem sie über diese iterieren. Die Anzahl der Wiederholungen ist dabei jedem selbst überlassen, aber als Faustregel gilt: Je mehr, desto besser, denn repititive Handlungen beruhigen ungemein! Auch rekursive Workflows haben sich als effektivst erwiesen, wenn es um die Reduzierung der Arbeitsleistung geht.<br/>
-                <br/>
-                In diesem Kontext wird strengestens vom Einsatz von Softwareversionsverwaltungssystemen abgeraten. Diese verhindern nämlich leider, dass sie den selben Code mehrfach schreiben müssen. Falls sie es dennoch nicht lassen können mit einer Versionierung zu arbeiten, empfielt es sich desöfteren Befehle wie <span class="code">git checkout .</span> oder <span class="code">git reset --hard HEAD^^^^^^</span> und <span class="code">git push --force</span> auszuführen.
               </p>
+              <h6 class="title">Kolaborationstools</h6>
+              <p class="description">
+                Vermeiden sie es Kolaborations- und Ticketsysteme wie JIRA, Mantis, trac oder Trello zu benutzen. Diese lenken sie nur vom Improvisieren ab und verhindern, dass ein und die selbe Aufgabe parallel von mehreren Mitarbeiten gleichzeitig erledigt wird.
+              </p>
+              <h6 class="title">Versionsverwaltungssysteme</h6>
+              <p class="description">
+                In diesem Kontext wird strengestens vom Einsatz von Softwareversionsverwaltungssystemen abgeraten. Diese verhindern nämlich leider, dass Arbeitsergebnisse abhanden kommen und sie den selben Code mehrfach schreiben müssen. Das Arbeiten über (S)FTP, SSH oder SCP, direkt am offenen Herzen ihres Produktivsystems hat sich als äußerst spannend erwiesen, wenn sie in einem größeren Team arbeiten: Spüren sie den Nervenkitzel bei diesen Operationen und klopfen Sie sich selbst auf die Schulter wenn der Patient trotz allem überlebt! Falls sie es dennoch nicht lassen können mit einer Versionierung zu arbeiten, empfielt es sich desöfteren Befehle wie <span class="code">git checkout .</span> oder <span class="code">git reset --hard HEAD^^^^^^</span> und <span class="code">git push --force</span> auszuführen.
+              </p>
+              <h6 class="title">Entwicklungsumgebungen</h6>
+              <p class="description">
+                Es ist ratsam viele verschiedene Editoren und IDEs sowohl abwechselnd als auch parallel zu nutzen. So lernen sie zum einen neue Tools kennen und zum anderen verschwenden sie damit zumindest schonmal ein bisschen Speicherplatz auf ihrem Laufwerk.<br/>
+                <br/>
+                Bearbeiten Sie ihren Quellcode zukünftig mal mit Notepad, mal mit VistualStudio, mal über die Commandline und falls sie obwohl wir davon abraten, eine Versionsverwaltung mit Webinterface nutzen, gerne auch direkt an dieser Stelle. Öffnen sie bestenfalls die selbe Datei gleichzeitig in mehreren Editoren, um mit voller Absicht die Änderungen der zusätzlichen Instanzen zu überschreiben und senken Sie so optimal ihre eigene Produktivität!
+              </p>
+
               <h5 class="title">Weitere Leistungen auf welche wir zukünftig näher eingehen werden:</h5>
               <p class="description">
                 <ul class="list">
