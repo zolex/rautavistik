@@ -63,6 +63,7 @@
   <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="/lib/cookie-popup/css/cookie-popup.css" rel="stylesheet">
   {% block stylesheets %}{% endblock %}
   <link href="/css/style.css" rel="stylesheet">
 </head>
@@ -79,11 +80,11 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           {% block topnav %}
-          <li class="active"><a href="/#intro">Home</a></li>
-          <li><a href="/#about">Über uns</a></li>
-          <li><a href="/#services">Leistungen</a></li>
-          <li><a href="/#team">Team</a></li>
-          <li><a href="/#clients">Kunden</a></li>
+          <li class="active"><a data-target="intro" href="/#intro">Home</a></li>
+          <li><a data-target="about" href="/#about">Über uns</a></li>
+          <li><a data-target="services" href="/#services">Leistungen</a></li>
+          <li><a data-target="team" href="/#team">Team</a></li>
+          <li><a data-target="clients" href="/#clients">Kunden</a></li>
           <li><a class="language" href="{{ block('alternate_en') }}" title="read english version"><img src="/img/en.png" alt="EN"> english</a></li>
           {% endblock %}
         </ul>
@@ -175,7 +176,7 @@
   <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="/lib/isotope/isotope.pkgd.min.js"></script>
   <script src="/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/lib/cookie-popup/js/cookie-popup.js"></script>
   <script src="/js/main.js"></script>
-
 </body>
 </html>

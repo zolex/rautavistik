@@ -86,19 +86,20 @@
           bottom = top + $(this).outerHeight();
   
       if (cur_pos >= top && cur_pos <= bottom) {
+        console.log($(this).attr('id'));
         main_nav.find('li').removeClass('active');
-        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+        main_nav.find('a[data-target='+$(this).attr('id')+']').parent('li').addClass('active');
       }
     });
   });
 
-  // jQuery counterUp (used in Whu Us section)
+  // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
 
-  // Porfolio isotope and filter
+  // Porfolio
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -111,13 +112,42 @@
     });
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
+  // Testimonials carousel
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
     items: 1,
     autoplayTimeout: 10000
+  });
+
+  // Cookie notification
+  var cookieTitle;
+  var cookieText;
+  var cookieOk;
+  var cookieMore;
+  if (window.location.pathname.match(/^\/en\/?/)) {
+    cookieTitle = "This website is using cockies";
+    cookieText = "We use cockies to ensure that we offer you an erotic experience. If you continue without changing your preferences, we will assume that you agree to receive all cockies on this website.";
+    cookieOk = "Understood";
+    cookieMore = "More info";
+  } else {
+    cookieTitle = "Diese Seite verwendet Cockies";
+    cookieText = "Wir verwenden Cockies, um sicherzustellen, dass wir Ihnen ein erotisches Erlebnis bieten. Wenn Sie fortfahren, ohne Ihre Einstellungen zu ändern, gehen wir davon aus, dass Sie mit dem Erhalt aller Cockies auf dieser Website einverstanden sind.";
+    cookieOk = "Verstanden";
+    cookieMore = "Mehr Infos";
+  }
+
+  $(document).euCookieLawPopup().init({
+    cookiePolicyUrl : "https://www.bsfrs.de/datenschutz",
+    popupPosition : "bottomleft",
+    popupTitle : cookieTitle,
+    popupText : cookieText,
+    buttonContinueTitle : cookieOk,
+    buttonLearnmoreTitle : cookieMore,
+    buttonLearnmoreOpenInNewWindow : true,
+    agreementExpiresInDays : 30,
+    autoAcceptCookiePolicy : false,
   });
 
 })(jQuery);
