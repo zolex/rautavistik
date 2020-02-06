@@ -140,7 +140,7 @@
 
   $(document).euCookieLawPopup().init({
     cookiePolicyUrl : "https://www.bsfrs.de/datenschutz",
-    popupPosition : "bottomleft",
+    popupPosition : "bottomright",
     popupTitle : cookieTitle,
     popupText : cookieText,
     buttonContinueTitle : cookieOk,
@@ -151,4 +151,3 @@
   });
 
 })(jQuery);
-

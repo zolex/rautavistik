@@ -1512,7 +1512,7 @@ a.language {
   font-size: 16px;
   font-weight: 100;
   line-height: 1;
-  color: #007bff;
+  color: #004289;
   background-color: #fff;
   filter: alpha(opacity=20);
   position: absolute;
@@ -1523,7 +1523,7 @@ a.language {
 .eupopup-closebutton:hover,
 .eupopup-closebutton:active {
   color: #fff;
-  background-color: #007bff;
+  background-color: #004289;
   text-decoration: none;
 }
 
@@ -1531,7 +1531,7 @@ a.language {
   font-size: 1.2em;
   font-weight: bold;
   padding: 7px;
-  color: #556877;
+  color: #283d50;
 }
 
 .eupopup-body {
@@ -1554,15 +1554,12 @@ a.language {
 
 .eupopup-button {
   text-decoration: none;
-  color: #007bff;
-  border-radius: 16px;
-  padding: 2px 8px;
-  margin: 0 10px;
+  color: #004289;
+  margin: 2px 10px;
 }
 
 .eupopup-button:hover,
 .eupopup-button:active {
   text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
+  color: #007bff;
 }
